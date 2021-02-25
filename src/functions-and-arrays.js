@@ -70,7 +70,7 @@ function sum(array) {
         if (el === true) {
           sum += 1;
         } else {
-          sum += false;
+          sum += 0;
         }
         break;
       default:
