@@ -19,12 +19,12 @@ const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard',
 function findLongestWord(words) {
   if (words.length < 1) return null; // empty array
 
-  var longestWord = ""; // init our longestWord with an empty string
+  let longestWord = ""; // init our longestWord with an empty string
 
   //
   // loop through all words, and check if one beats `longestWord`
   //
-  for (var i = 0; i < words.length; i++) {
+  for (let i = 0; i < words.length; i++) {
     let word = words[i]; // the current word of our loop
 
     // if current word beats `longestWord`
@@ -50,7 +50,7 @@ function sumNumbers(array) {
   let sum = 0; // our accumulator where we will sum every numbers of `array`
 
   // loop through all our numbers and sum them into `sum`
-  for (var x = 0; x < array.length; x++) {
+  for (let x = 0; x < array.length; x++) {
     sum += array[x];
   }
 
@@ -121,7 +121,7 @@ function averageWordLength(words) {
   let sumLetters = 0;
 
   // loop through `words` and sum each word's length
-  for (var i = 0; i < words.length; i++) {
+  for (let i = 0; i < words.length; i++) {
     sumLetters += words[i].length;
   }
 
@@ -164,7 +164,7 @@ function uniquifyArray(array) {
   const newArray = []; // create a new empty array
   
   // loop through each element
-  for (var i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     // If we don't find the element in our new array
     if (newArray.indexOf(array[i]) === -1) {
       newArray.push(array[i]); // let's add it
@@ -190,7 +190,7 @@ function doesWordExist(words, word) {
   let exist = false;
 
   // loop through our `words`
-  for (var i = 0; i < words.length; i++) {
+  for (let i = 0; i < words.length; i++) {
     // if the current word is the one we are looking for
     if (words[i] === word) {
       exist = true;
@@ -232,7 +232,7 @@ function howManyTimes(words, word) {
   let appearances = 0; // init to 0
 
   // loop through each of our `words`
-  for (var i = 0; i < words.length; i++) {
+  for (let i = 0; i < words.length; i++) {
     // if this is the word we are looking for
     if (words[i] === word) {
       appearances++; // increment `appearances` by 1
