@@ -140,7 +140,7 @@ console.log(averageLength);
 function avg(array) {
   if (array.length < 1) return null;
 
-  return Number((sum(array)/array.length).toFixed(2))
+  return sum(array)/array.length
 }
 
 // Iteration #5: Unique arrays
